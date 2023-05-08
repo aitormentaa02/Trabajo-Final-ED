@@ -9,8 +9,10 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-
-
+	<audio autoplay controls>
+		<source src="musica.mp3" type="audio/mp3">
+			Tu navegador no soporta audio HTML5.
+	</audio>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3 col-sm-offset-3 scoreBoard">
@@ -26,9 +28,9 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3" id="joinForm">
-				<h1 class="text-center colorDark">Enter your name</h1>
+				<h1 style="font-family: 'Courier New', Courier, monospace;">Enter your name</h1>
 				<div class="panel panel-danger">
-					<div class="panel-body">
+					<div class="panel-body" style="background-color:">
 						<div class="input-group">
 							<input class="form-control input-lg" id="nickname"
 								autofocus="autofocus" /><span class="input-group-btn">
@@ -41,7 +43,7 @@
 			<div class="col-sm-6 col-sm-offset-3" id="gameBoard"></div>
 		</div>
 	</div>
-
+	
 	<script src="/js/Board.js"></script>
 	<script src="/js/app.js"></script>
 
