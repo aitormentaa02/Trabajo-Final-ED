@@ -98,7 +98,8 @@ public class TicTacToeHandler extends TextWebSocketHandler {
 
 			case JOIN_GAME:
 				int numPlayers = game.getPlayers().size();
-				String letter = numPlayers == 0 ? "X" : "O";
+				/*cambio de la figura */
+				String letter = numPlayers == 0 ? "%" : "@";
 				Player player = new Player(numPlayers + 1, letter, msg.data.name);
 				game.addPlayer(player);
 				break;

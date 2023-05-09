@@ -129,8 +129,8 @@ class Board {
     	} else {
     		looser = this.players[0].name;
     	}
-    	
-    	alert(winner+" wins! "+looser+" looses.");
+    	/*cabio del mensaje de victoria y derrota*/
+    	alert(winner+" es el putisimo GANADOR "+looser+" PIERDE por malo.");
     	
     	this.disableAll();
         this.highlightCells(pos);
