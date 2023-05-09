@@ -129,8 +129,10 @@
     background: transparent;
 }
 
+/*cambio del fondo a negro*/
 body {
-    background: #A5DAD2;
+
+    background: rgb(0, 0, 0);
     font-family: Quicksand, san-serif;
 }
 
@@ -143,11 +145,12 @@ body {
 }
 
 .bgDark {
-    background: #516D66;
+    background: white;
 }
 
+/*Color de la fuente de inicio*/
 .colorDark {
-    color: #516D66;
+    color: white;
 }
 
 .bgRed {
@@ -166,9 +169,10 @@ body {
     width: 100%;
 }
 
+/**/
 .gameBoard td {
     text-align: center;
-    color: #516D66;
+    color: white;
     font-size: 8em;
     cursor: pointer;
     transition: all 0.5s;
@@ -187,9 +191,9 @@ body {
     box-shadow: none !important;
     cursor: default;
 }
-
+/*cambio del score a blanco*/
 .scoreBoard {
-    color: #516D66;
+    color: white;
     height: 100px;
 }
 
