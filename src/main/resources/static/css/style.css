@@ -1,6 +1,68 @@
+@import url(//db.onlinewebfonts.com/c/cebafa28ad25ee4c31b9dd6daef2f4b0?family=Sigmar+One);
+
+:root {
+    --bg: #1a1e24;
+    --color: #eee;
+    --font: 'Sigmar One';
+}
+
+.botonn {
+    position: absolute;
+    left: 80%;
+    padding: 1.5rem 0;
+    filter: url('#goo');
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+}
+
+.button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
 .wrap{
-    width: 90%;
+    position: absolute;
+    width: 60%;
     max-width: 1000px;
+    color: white;
 }
 
 .widget{
@@ -14,7 +76,7 @@
 }
 
 .fecha{
-    font-family: Sigmar, Arial;
+    font-family: 'Sigmar One';
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 0.3125rem;
@@ -24,12 +86,21 @@
 }
 
 .reloj{
-    font-family: Sigmar, Arial;
+    font-family: 'Sigmar One';
     width: 100%;
     padding: 20px;
     font-size: 4em;
     text-align: center;
     background: rgba(0, 0, 0, .5);
+}
+
+.reloj .caja-segundos{
+    display: inline-block;
+}
+
+.reloj .segundos, .reloj .ampm{
+    font-size: 3rem;
+    display: block;
 }
 
 @font-face {
@@ -49,11 +120,9 @@
 }
 
 @font-face {
-    font-family: 'Sigmar';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Sigmar'), local('Sigmar'), url(Sigmar-Regular.ttf) format('ttf');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: "Sigmar One"; 
+    src: url("//db.onlinewebfonts.com/t/cebafa28ad25ee4c31b9dd6daef2f4b0.eot"); 
+    src: url("//db.onlinewebfonts.com/t/cebafa28ad25ee4c31b9dd6daef2f4b0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cebafa28ad25ee4c31b9dd6daef2f4b0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/cebafa28ad25ee4c31b9dd6daef2f4b0.woff") format("woff"), url("//db.onlinewebfonts.com/t/cebafa28ad25ee4c31b9dd6daef2f4b0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/cebafa28ad25ee4c31b9dd6daef2f4b0.svg#Sigmar One") format("svg"); 
 }
 
 ::selection {
